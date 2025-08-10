@@ -1,1 +1,79 @@
+<% layout('layout') %>
+<section class="row align-items-center g-5">
+  <div class="col-lg-6">
+    <h1 class="display-5 fw-bold">Protect what matters, get a personalized quote in minutes.</h1>
+    <p class="lead text-muted">Bundle discounts, fast claims, and real agents who care. Tell us what you need and we’ll get you options today.</p>
+    <ul class="list-unstyled text-muted">
+      <li>✓ Licensed agents in all 50 states</li>
+      <li>✓ Average customers save $480/year</li>
+      <li>✓ No spam — we respect your inbox</li>
+    </ul>
+  </div>
+  <div class="col-lg-5 ms-lg-auto">
+    <div class="card shadow-sm">
+      <div class="card-body p-4">
+        <h2 class="h4 mb-3">Get your free quote</h2>
+        <form method="post" action="/lead" onsubmit="return window.validateLeadForm(this)">
+          <div class="mb-3">
+            <label class="form-label">Name*</label>
+            <input name="name" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email*</label>
+            <input type="email" name="email" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Phone*</label>
+            <input name="phone" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Insurance Type*</label>
+            <select name="insurance_type" class="form-select" required>
+              <option value="">Select one</option>
+              <option>Auto</option>
+              <option>Home</option>
+              <option>Life</option>
+              <option>Health</option>
+              <option>Business</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Notes</label>
+            <textarea name="message" rows="3" class="form-control" placeholder="Anything else we should know?"></textarea>
+          </div>
+          <button class="btn btn-primary w-100">Request Quote</button>
+          <p class="form-text mt-2">By submitting, you agree to be contacted by an insurance professional.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section class="row mt-5 g-4">
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h3 class="h5">Real savings</h3>
+        <p class="text-muted">“Switched my auto & home and saved $56/month.” — Jordan M.</n></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h3 class="h5">Fast quotes</h3>
+        <p class="text-muted">“Submitted at lunch, had options before I got home.” — Priya K.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h3 class="h5">Local experts</h3>
+        <p class="text-muted">“They explained coverages in plain English. 10/10.” — Chris R.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="text-center text-muted small mt-5">© <span id="year"></span> ShieldSure Insurance</footer>
