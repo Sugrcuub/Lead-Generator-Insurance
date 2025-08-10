@@ -1,1 +1,4 @@
-
+body { background: #f8fafc; }
+.navbar-brand { letter-spacing: 0.3px; }
+.card { border: 1px solid rgba(0,0,0,0.06); }
+.form-label { font-weight: 600; }
